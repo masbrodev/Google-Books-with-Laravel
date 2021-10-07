@@ -5,7 +5,7 @@
 
 	<div class="navbar-collapse collapse" id="footer">
 		<div class="navbar-text">
-			&copy; 2015. <a href="#" class="navbar-link">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" class="navbar-link" target="_blank">Eugene Kopyov</a>
+			&copy; 2021. <a href="#" class="navbar-link">RealRiset.com</a> by <a href="https://romeo.id" class="navbar-link" target="_blank">Halimatus Sya'diah</a>
 		</div>
 
 		<div class="navbar-right">

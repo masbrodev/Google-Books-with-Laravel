@@ -3,8 +3,9 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-inverse navbar-transparent navbar-fixed-top">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="{{ url('/') }}"><img src="/images/logo_light.png" alt=""></a>
-
+			<a class="navbar-brand" href="{{ url('/') }}">
+			<img src="/images/logo.png" alt=""></a>
+			
 			<ul class="nav navbar-nav pull-right visible-xs-block">
 				<li>
 					<a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a>
@@ -12,7 +13,7 @@
 			</ul>
 		</div>
 		<ul class="nav navbar-nav">
-			<li><a href="{{  url('/') }}">home</a></li>
+			<li><a href="{{  url('/') }}">REALRISET</a></li>
 			@if(Auth::check())
 				<li><a href="{{ url('mybooks') }}">  
 					<i class=" icon-bookmarks"></i>   my books</a>

@@ -84,6 +84,7 @@ class BookController extends Controller
         $book['categories'] = $book_api['volumeInfo']['categories'];
         $book['published_at'] = $book_api['volumeInfo']['publishedDate'];
 
+        // return $book;
         return view('books.show', compact('book'));
     } 
 

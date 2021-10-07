@@ -8323,7 +8323,8 @@ a.bg-danger:focus {
   }
 }
 .page-header-inverse {
-  background-color: #273246;
+  /* color header */
+  background-color: #12cc5f;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -11374,8 +11375,7 @@ li + .dropdown-header.highlight,
   padding-bottom: 92px;
 }
 .navbar-brand > img {
-  margin-top: 2px;
-  height: 16px;
+  height: 30px;
 }
 .navbar-nav {
   margin: 0;

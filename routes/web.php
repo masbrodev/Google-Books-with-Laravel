@@ -1,5 +1,8 @@
 <?php
- use Scriptotek\GoogleBooks\GoogleBooks;
+
+use Illuminate\Support\Facades\Route;
+use Scriptotek\GoogleBooks\GoogleBooks;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,8 +15,15 @@
 */
 
 Route::get('/test', function () {
-$books = new GoogleBooks();
+$books = new GoogleBooks(['key' => 'AIzaSyCH451IMHdF0ZCxf4PdDjuYpCljskDRjB4']);
 dd($books->volumes->search('php'));
+});
+
+Route::get('/gas', function () {
+    $books = new GoogleBooks(['key' => 'AIzaSyCH451IMHdF0ZCxf4PdDjuYpCljskDRjB4']);
+    foreach ($books->volumes->search('Hello world') as $vol) {
+        echo $vol->title . "\n";
+    }
 });
 
 

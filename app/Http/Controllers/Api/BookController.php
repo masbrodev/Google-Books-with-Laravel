@@ -17,13 +17,13 @@ class BookController extends Controller
      */
     public function index(Request $request)
     {
-        $keyword = $request->get('keyword') ?? 'php';
+        $keyword = $request->get('keyword') ?? 'riset';
         $API_KEY = env('GOOGLE_BOOKS_KEY');
 
         // instantiate the Google API Client
         $client = new Google_Client();
         $client->setApplicationName("Google Books with PHP Tutorial Application");
-        $client->setDeveloperKey( $API_KEY );
+        $client->setDeveloperKey($API_KEY);
 
         // get an instance of the Google Books client
         $service = new Google_Service_Books($client);
