@@ -8,7 +8,7 @@
 				<div class="content-group-lg">
 					<div class="content-group text-center">
 						<a href="#" class="display-inline-block">
-							<img src="{{ $book['medium'] ??  $book['thumbnail'] }}" class="img-responsive" alt="">
+							<img src="{{ $book['thumbnail'] ?? $book['medium'] }}" class="img-responsive" alt="">
 						</a>
 					</div>
 
